@@ -4,7 +4,7 @@ import "../styles/theme.css";
 import imgEstadios from "../assets/estadios.jpg";
 import imgClubes from "../assets/clubes.jpg";
 
-const API_BASE = "http://127.0.0.1:8081";
+const API_BASE = "https://football-team-management-club-season-service-production.up.railway.app";
 
 // Paleta de colores
 const colors = {
