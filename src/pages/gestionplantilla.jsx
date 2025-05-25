@@ -4,7 +4,7 @@ import "../styles/theme.css";
 import imgJugadores from "../assets/Jugadores.jpg";
 import imgEntrenadores from "../assets/entrenadores.jpg";
 
-const API_BASE = "http://127.0.0.1:8082";
+const API_BASE = "https://football-team-management-personnel-service-production.up.railway.app";
 
 const colors = {
   navy: "#1a2238",
