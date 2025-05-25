@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import Sidebar from "../components/Sidebar";
 import imgPartidos from "../assets/partido.jpg";
 
-const API_BASE = "https://football-team-management-match-stats-service-production.up.railway.app/";
+const API_BASE = "http://127.0.0.1:8080";
 const CLUBES_API = "https://football-team-management-club-season-service-production.up.railway.app";
 const PERSONAL_API = "https://football-team-management-personnel-service-production.up.railway.app";
 
