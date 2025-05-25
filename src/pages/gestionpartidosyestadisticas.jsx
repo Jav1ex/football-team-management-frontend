@@ -4,7 +4,7 @@ import imgPartidos from "../assets/partido.jpg";
 
 const API_BASE = "http://127.0.0.1:8080";
 const CLUBES_API = "http://127.0.0.1:8081";
-const PERSONAL_API = "http://127.0.0.1:8082";
+const PERSONAL_API = "https://football-team-management-personnel-service-production.up.railway.app";
 
 const colors = {
   navy: "#1a2238",
