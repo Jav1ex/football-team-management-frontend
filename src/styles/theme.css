@@ -1,0 +1,191 @@
+:root {
+    --color-navy: #1a2238;
+    --color-grass: #21e6c1;
+    --color-offwhite: #f5f6fa;
+    --color-charcoal: #222831;
+    --color-softred: #e94560;
+  }
+  
+  body {
+    background: linear-gradient(135deg, var(--color-navy) 60%, var(--color-charcoal) 100%);
+    color: var(--color-offwhite);
+    font-family: 'Segoe UI', Arial, sans-serif;
+    min-height: 100vh;
+    margin: 0;
+  }
+  
+  .card {
+    background: var(--color-offwhite);
+    color: var(--color-charcoal);
+    border-radius: 12px;
+    box-shadow: 0 2px 12px rgba(30,40,60,0.10);
+    padding: 24px;
+    margin-bottom: 32px;
+  }
+  
+  .btn {
+    background: var(--color-grass);
+    color: var(--color-charcoal);
+    border: none;
+    border-radius: 6px;
+    padding: 8px 16px;
+    margin: 0 4px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background 0.2s;
+  }
+  
+  .btn-danger {
+    background: var(--color-softred);
+    color: #fff;
+  }
+  
+  .btn-secondary {
+    background: var(--color-navy);
+    color: var(--color-offwhite);
+  }
+  
+  .table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 16px;
+    background: var(--color-offwhite);
+    border-radius: 8px;
+    overflow: hidden;
+  }
+  
+  .table th {
+    background: var(--color-navy);
+    color: var(--color-offwhite);
+    padding: 12px;
+  }
+  
+  .table td {
+    padding: 10px;
+    border-bottom: 1px solid #1a223822;
+  }
+  
+  .modal {
+    background: var(--color-offwhite);
+    color: var(--color-charcoal);
+    border-radius: 10px;
+    box-shadow: 0 2px 16px rgba(30,40,60,0.18);
+    padding: 32px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    min-width: 320px;
+    transform: translate(-50%, -50%);
+    z-index: 1000;
+  }
+  
+  .overlay {
+    position: fixed;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: #0008;
+    z-index: 999;
+  }
+
+  .sidebar-hamburger {
+    position: fixed;
+    top: 32px;
+    left: 32px;
+    z-index: 1101;
+    background: none;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    padding: 8px;
+  }
+  .sidebar-bar {
+    width: 28px;
+    height: 4px;
+    background: var(--color-grass);
+    border-radius: 2px;
+    display: block;
+  }
+  .sidebar-overlay {
+    position: fixed;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: #000a;
+    z-index: 1100;
+  }
+  .sidebar {
+    position: fixed;
+    top: 0;
+    left: -260px;
+    width: 240px;
+    height: 100vh;
+    background: var(--color-navy);
+    color: var(--color-offwhite);
+    box-shadow: 2px 0 16px #0004;
+    z-index: 1102;
+    padding: 32px 16px 16px 16px;
+    transition: left 0.3s cubic-bezier(.4,2,.6,1);
+    display: flex;
+    flex-direction: column;
+  }
+  .sidebar.open {
+    left: 0;
+  }
+  .sidebar-close {
+    background: none;
+    border: none;
+    color: var(--color-grass);
+    font-size: 2rem;
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    cursor: pointer;
+  }
+  .sidebar ul {
+    list-style: none;
+    padding: 0;
+    margin: 48px 0 0 0;
+  }
+  .sidebar li {
+    margin-bottom: 18px;
+  }
+  .sidebar a {
+    color: var(--color-offwhite);
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-weight: 500;
+    transition: color 0.2s;
+  }
+  .sidebar a:hover {
+    color: var(--color-grass);
+  }
+
+  /* Mejorar tabla para columnas bien definidas */
+  .table th, .table td {
+    text-align: left;
+    min-width: 120px;
+    max-width: 220px;
+    word-break: break-word;
+  }
+  .table th {
+    font-size: 1.08rem;
+    font-weight: 600;
+  }
+  .table tr {
+    border-bottom: 1px solid #1a223822;
+  }
+
+  .form-input {
+    padding: 8px 12px;
+    border: 1px solid var(--color-navy);
+    border-radius: 6px;
+    font-size: 1rem;
+    width: 100%;
+    background: var(--color-offwhite);
+    color: var(--color-charcoal);
+  }
+
+  .form-input:focus {
+    outline: none;
+    border-color: var(--color-grass);
+    box-shadow: 0 0 0 2px var(--color-grass)33;
+  }
