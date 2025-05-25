@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import Sidebar from "../components/Sidebar";
 
-const API_BASE = "http://127.0.0.1:8081";
+const API_BASE = "https://football-team-management-club-season-service-production.up.railway.app";
 
 const colors = {
   navy: "#1a2238",
