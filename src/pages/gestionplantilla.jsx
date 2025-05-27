@@ -135,8 +135,8 @@ export default function GestionPlantilla() {
   useEffect(() => {
     fetch(`${API_BASE}/jugadores/`).then(r => r.json()).then(setJugadores);
     fetch(`${API_BASE}/entrenadores/`).then(r => r.json()).then(setEntrenadores);
-    fetch(`${CLUBES_AP}/equipos/`).then(r => r.json()).then(setEquipos);
-    fetch(`${CLUBES_AP}/temporadas/`).then(r => r.json()).then(setTemporadas);
+    fetch(`${CLUBES_API}/equipos/`).then(r => r.json()).then(setEquipos);
+    fetch(`${CLUBES_API}/temporadas/`).then(r => r.json()).then(setTemporadas);
   }, []);
 
   // Handlers generales
