@@ -5,6 +5,7 @@ import imgJugadores from "../assets/Jugadores.jpg";
 import imgEntrenadores from "../assets/entrenadores.jpg";
 
 const API_BASE = "https://football-team-management-personnel-service-production.up.railway.app";
+const CLUBES_API = "https://football-team-management-club-season-service-production.up.railway.app";
 
 const colors = {
   navy: "#1a2238",
@@ -134,9 +135,8 @@ export default function GestionPlantilla() {
   useEffect(() => {
     fetch(`${API_BASE}/jugadores/`).then(r => r.json()).then(setJugadores);
     fetch(`${API_BASE}/entrenadores/`).then(r => r.json()).then(setEntrenadores);
-    // Si tienes endpoints para equipos y temporadas, cámbialos aquí:
-    fetch("http://127.0.0.1:8081/equipos/").then(r => r.json()).then(setEquipos);
-    fetch("http://127.0.0.1:8081/temporadas/").then(r => r.json()).then(setTemporadas);
+    fetch(`${CLUBES_AP}/equipos/`).then(r => r.json()).then(setEquipos);
+    fetch(`${CLUBES_AP}/temporadas/`).then(r => r.json()).then(setTemporadas);
   }, []);
 
   // Handlers generales
