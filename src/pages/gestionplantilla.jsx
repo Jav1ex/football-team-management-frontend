@@ -326,7 +326,7 @@ export default function GestionPlantilla() {
                   </select>
                   <select style={styles.select} name="temporada_id" value={formJuegaEn.temporada_id} onChange={e => setFormJuegaEn({ ...formJuegaEn, temporada_id: e.target.value })}>
                     <option value="">Selecciona temporada</option>
-                    {temporadas.map(t => <option key={t.temporada_id} value={t.temporada_id}>{t.nombre}</option>)}
+                    {temporadas.map(t => <option key={t.temporada_id} value={t.temporada_id}>{t.nombre_temporada}</option>)}
                   </select>
                   <input style={styles.input} name="fecha_inicio" type="date" placeholder="Fecha inicio (YYYY-MM-DD)" value={formJuegaEn.fecha_inicio} onChange={e => setFormJuegaEn({ ...formJuegaEn, fecha_inicio: e.target.value })} />
                   <input style={styles.input} name="fecha_fin" type="date" placeholder="Fecha fin (YYYY-MM-DD)" value={formJuegaEn.fecha_fin} onChange={e => setFormJuegaEn({ ...formJuegaEn, fecha_fin: e.target.value })} />
@@ -406,7 +406,7 @@ export default function GestionPlantilla() {
                   </select>
                   <select style={styles.select} name="temporada_id" value={formEntrena.temporada_id} onChange={e => setFormEntrena({ ...formEntrena, temporada_id: e.target.value })}>
                     <option value="">Selecciona temporada</option>
-                    {temporadas.map(t => <option key={t.temporada_id} value={t.temporada_id}>{t.nombre}</option>)}
+                    {temporadas.map(t => <option key={t.temporada_id} value={t.temporada_id}>{t.nombre_temporada}</option>)}
                   </select>
                   <input style={styles.input} name="fecha_inicio" type="date" placeholder="Fecha inicio (YYYY-MM-DD)" value={formEntrena.fecha_inicio} onChange={e => setFormEntrena({ ...formEntrena, fecha_inicio: e.target.value })} />
                   <input style={styles.input} name="fecha_fin" type="date" placeholder="Fecha fin (YYYY-MM-DD)" value={formEntrena.fecha_fin} onChange={e => setFormEntrena({ ...formEntrena, fecha_fin: e.target.value })} />
