@@ -103,7 +103,8 @@ const styles = {
     outline: "none",
     background: "#fff",
     boxShadow: "0 1px 4px rgba(30,40,60,0.06)",
-    transition: "border 0.2s, box-shadow 0.2s"
+    transition: "border 0.2s, box-shadow 0.2s",
+    color: "#000000"
   }
 };
 
